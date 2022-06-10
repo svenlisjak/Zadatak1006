@@ -20,9 +20,11 @@
                     return 0;
                 }
                 if (number.length > 1) {
+                    let sum = 0;
                     number.forEach((element) => {
-                        number += parseInt(element);
+                        sum += parseInt(element);
                     });
+                    return sum;
                 }
                 return parseInt(number);
             }
